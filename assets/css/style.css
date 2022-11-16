@@ -1,0 +1,134 @@
+body {
+    background-color: rgba(233, 230, 224, 0.846);
+    margin: auto;
+}
+
+/* NAV */
+nav {
+    background-color: rgb(35, 102, 121);
+    color: whitesmoke;
+    font-family: 'Caveat', cursive;
+}
+
+.nav__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+}
+
+.nav__container--brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__container--img img {
+    width: 10em;
+    height: 6em;
+    padding: 0 0 0 0.8em;
+}
+
+.nav__container--img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    padding: 0.5em 1.5em;
+    list-style: none;
+}
+
+.nav__menu ul li:hover {
+    color: rgb(32, 218, 196);
+    cursor: pointer;
+}
+
+/* TÍTULO */
+.title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title img {
+    width: 35%;
+    height: auto;
+    text-align: center;
+}
+
+/* CARDS */
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Caveat', cursive;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(168, 216, 230);
+    margin: 20px;
+    box-shadow: 5px 5px rgb(97, 99, 101);
+    border-radius: 5%;
+    margin: auto;
+   
+}
+
+.imagen {
+    margin: auto;
+}
+
+footer{
+    background-color: rgb(35, 102, 121);
+    height: 6em;
+}
+footer p {
+    color: aliceblue;
+    font-family: 'Caveat', cursive;
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 1em;
+}
+/* MEDIA QUERYS */
+
+/* MEDIUM */
+@media (max-width: 920px){
+    .container-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* SMALL */
+@media (max-width: 620px) {
+    .container-card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    ul li {
+      padding: 0.5em 0.5em;
+      list-style: none;
+    }
+}
