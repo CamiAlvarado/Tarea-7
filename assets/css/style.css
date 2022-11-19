@@ -1,6 +1,7 @@
 body {
     background-color: rgba(233, 230, 224, 0.846);
     margin: auto;
+    max-width: 100%;
 }
 
 /* NAV */
@@ -8,6 +9,7 @@ nav {
     background-color: rgb(35, 102, 121);
     color: whitesmoke;
     font-family: 'Caveat', cursive;
+    width: 100%;
 }
 
 .nav__container {
@@ -119,6 +121,10 @@ footer p {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    ul li {
+        padding: 0.5em 0.5em;
+        list-style: none;
+      }
 }
 /* SMALL */
 @media (max-width: 620px) {
@@ -126,9 +132,10 @@ footer p {
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
     ul li {
       padding: 0.5em 0.5em;
       list-style: none;
+      font-size: 0.8em;
     }
 }
